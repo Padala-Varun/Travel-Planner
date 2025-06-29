@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel-Planner</title>
     <link rel="icon" href="data:," />
+
+    <!-- Secure Content Security Policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none';"
+    />
   </head>
 
   <body>
     <div id="root"></div>
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="script-src 'self' 'unsafe-eval';"
-    />
 
     <script type="module" src="/src/main.tsx"></script>
   </body>
